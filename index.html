@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./assets/pic/icon-512x512.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-header__hamburger" id="hamburger">
+        <div class="close-hamburger">
+          <img src="./assets/pic/hamburger2 (1).png" alt="icon-menu">
+        </div>
+        <ul class="menu-hamburger">
+          <li class="nav-header__product"><a href="#">محصولات</a></li>
+          <li class="nav-header__product"><a href="#">اخبار</a></li>
+          <li class="nav-header__product"><a href="#">تماس با ما</a></li>
+          <li class="nav-header__product"><a href="#">درباره ما</a></li>
+        </ul>
+      </div>
+      <header>
+        <nav class="nav-header">
+          <div class="open-hamburgermenu" ><img src="./assets/pic/hamburger1.png" alt=""></div>
+          <div class="logobox">
+            <img src="./assets/pic/gamera.png" alt="logogame" />
+          </div>
+          <ul class="nav-header__products flex">
+            <li class="nav-header__product product-submenu">
+              <a href="">محصولات</a>
+              <ul class="nav-header__product-name nav-header__product">
+                <li>
+                  <a href="#">
+                    Ps5<img
+                      class="menu-img"
+                      src="./assets/pic/icons8-ps-5-48.png"
+                      alt="iconps5"
+                      width="30px"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ps4
+                    <img
+                      class="menu-img"
+                      src="./assets/pic/icons8-ps4-48.png"
+                      alt="iconps4"
+                      width="30px"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Xbox
+                    <img
+                      class="menu-img"
+                      src="./assets/pic/icons8-xbox-48.png"
+                      alt="iconxbox"
+                      width="20px"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header__product"><a href="">اخبار</a></li>
+            <li class="nav-header__product"><a href="">تماس با ما</a></li>
+            <li class="nav-header__product"><a href="">درباره ما</a></li>
+          </ul>
+          <div class="nav-header__left flex">
+            <div class="nav-haeder__icons flex">
+              <img
+                class="nav-haeder__icon change-icon"
+                src="./assets/pic/searchicon.png"
+                alt="searchicon"
+                width="25px"
+              />
+              <img
+                class="nav-haeder__icon"
+                src="./assets/pic/shopicon.png"
+                alt="shopicon"
+                width="35px"
+              />
+            </div>
+            <div class="nav-haeder__login">
+              <button>ثبت نام</button>
+            </div>
+
+            <div class="nav-header__bg">
+              <img
+                src="./assets/pic/icons8-sun-48.png"
+                alt="iconsun"
+                width="30px"
+                id="sun"
+                class="nav-header__img hidden"
+              />
+              <img
+                src="./assets/pic/icons8-moon-48.png"
+                alt="iconmoon"
+                width="30px"
+                id="moon"
+                class="nav-header__img"
+              />
+            </div>
+          </div>
+        </nav>
+
+        <!-- BANER HAEDER -->
+
+        <div class="banner-header">
+          <div class="banner-header__img">
+            <img src="./assets/pic/baner.png" alt="banerheader" />
+            <div class="banner-header__text">
+              <p class="banner-header__titer">
+                دنیای بی انتهای بازی در <span>گیمرا</span>
+              </p>
+              <p>
+                مرجع تخصصی ارائه بازی های نسل 8 و 9
+                <span id="banner-text"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
