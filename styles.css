@@ -206,6 +206,7 @@ template {
   --font-titr:"iranbold";
   --font-word:"iranwebmediom";
   --fonst-main-2:"iranmeduim";
+  --font-heavy:"iranheavy";
 
 
 
@@ -449,6 +450,181 @@ body.bg-color nav a , body.bg-color button{
   display: none;
 }
 
+
+
+
+
+/*////////////////////////////////// Main Section /////////////////////////////////////*/
+.introduce_characters__title {
+position: relative;
+top: 5rem;
+
+}
+
+.introduce_characters__title span{
+  font-family: var(--font-heavy);
+  font-size: 1.2rem;
+  color: var(--color-blue-2);
+}
+
+
+.introduce_characters__slider-arrow{
+ 
+ position: absolute;
+  margin-top: 15rem;
+
+ 
+}
+.introduce_characters__slider-arrow img{
+  width: 1rem;
+ 
+ 
+
+  border-radius: var(--border-1);
+ 
+ 
+}
+.introduce_characters__slider-arrow .prev{
+  position: absolute;
+ right: 52rem;
+}
+.introduce_characters__slider-arrow button{
+  padding: 10px 10px;
+  border: none;
+  border-radius: var(--border-1);
+}
+
+.line{
+  width: 200px;
+  height: 4px;
+  background: rgba(8, 23, 73, 0.691);
+  border-radius: var(--border-1);
+  overflow: hidden;
+}
+.line span{
+  display: block;
+  width: 50px;
+  height: 100%;
+  background-color: #3b82f6;
+  background: linear-gradient(90deg,#00bfff,#3b82f6,#60a5fa);
+  box-shadow: 0 0 10px #3b82f6;
+  animation: move 2s linear infinite;
+}
+@keyframes move{
+  from{
+   
+    transform: translateX(-200px);
+  }
+  30%{
+    width: 90px;
+  }
+  to{
+    
+    transform: translateX(200px);
+  }
+}
+
+
+.introduce_characters__slider{
+margin:  0 auto;
+  flex-direction: column;
+  width: 55rem;
+   overflow: hidden;
+  transform: translateY(-40px);
+  transition: 1s ease;
+}
+.introduce_characters__slider .cards{
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+   gap: 4.6rem;
+
+flex-wrap: nowrap;
+overflow-x: auto;
+overflow-x: hidden;
+margin-top: 9rem;
+  
+}
+#introduce_characters.actives{
+  transform: translateY(0);
+}
+
+.introduce_characters__slider .card img{
+ 
+ max-width: 250px;
+  height: 300px;
+}
+
+
+.cards-text{
+  display: flex;
+  top: 2rem;
+  
+  width: 100%;
+ height: auto;
+  background-color: var(--color-indigo-2);
+border-radius: var(--border-2);
+  box-shadow :rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  
+}
+.cards-text p{
+  padding: 1rem;
+  top: 1rem;
+  color: #ffff;
+  font-family: var(--fonst-main-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width : 1200px){
   .container{
       max-width: 960px;
@@ -691,4 +867,6 @@ body.bg-color nav a , body.bg-color button{
         }
    
 }
+
+
 
