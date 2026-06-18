@@ -16,6 +16,7 @@ Textchange();
 
 //         Light Dark Body        ////////
 
+
 const sunEl = document.querySelector("#sun");
 const moonEl = document.querySelector("#moon");
 
@@ -34,7 +35,7 @@ moonEl.addEventListener("click", () => {
 
   moonEl.classList.add("hidden");
   sunEl.classList.remove("hidden");
-
+ 
   localStorage.setItem("theme", "dark");
 });
 
@@ -46,6 +47,7 @@ if (theme == "light") {
   moonEl.classList.remove("hidden");
 } else {
   document.body.classList.add("bg-color");
+ 
   moonEl.classList.add("hidden");
   sunEl.classList.remove("hidden");
 }
@@ -156,14 +158,14 @@ nextEl.addEventListener("click", nextSlide);
 prevEl.addEventListener("click", prevSlide);
 
 function nextSlide() {
-  cardslider.scrollLeft += 100;
+  cardslider.scrollLeft += 125;
 }
 window.onload =()=>{
   cardslider.scrollLeft =0
 }
 nextSlide();
 function prevSlide() {
-  cardslider.scrollLeft -= 100;
+  cardslider.scrollLeft -= 125;
 }
 prevSlide();
 
@@ -176,9 +178,11 @@ const slider =document.querySelector("#introduce_characters")
 function checkScroll(){
    if (window.scrollY < 370) {
     slider.classList.add("actives")
+  
   }
   else{
     slider.classList.remove("actives")
+   
   }
 }
 window.addEventListener("scroll",checkScroll)

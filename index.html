@@ -125,44 +125,47 @@
         </div>
       </header>
       <main>
+         <div class="introduce_characters__bg"></div>
         <section>
-          <div class="introduce_characters__title">
-            <span>شخصیت های محبوب بازی</span>
-            <div class="line"><span></span></div>
-          </div>
           
-          <div class="introduce_characters__slider" id="introduce_characters">
-            <div class="introduce_characters__slider-arrow">
-            <button class="next">
-              <img
-                src="./assets/pic/icons8-left-arrow-50.png"
-                alt="arrow-left"
-              />
-            </button>
-            <button class="prev">
-              <img
-                src="./assets/pic/icons8-left-arrow-50 - Copy.png"
-                alt="arrow-right"
-              />
-            </button>
+          <div class="introduce_characters__title">
+           
+            <h1>شخصیت های محبوب بازی</h1>
+           
           </div>
+
+          <div class="introduce_characters__slider" id="introduce_characters">
+           
+            <div class="introduce_characters__slider-arrow">
+              <button class="next">
+                <img
+                  src="./assets/pic/icons8-left-arrow-50.png"
+                  alt="arrow-left"
+                />
+              </button>
+              <button class="prev">
+                <img
+                  src="./assets/pic/icons8-left-arrow-50 - Copy.png"
+                  alt="arrow-right"
+                />
+              </button>
+            </div>
             <div class="cards flex" id="cards">
-              <div class="card ">
+              <div class="card">
                 <img
                   src="./assets/pic/dante.png"
                   alt="pic_dante"
                   data-name="dante"
                 />
               </div>
-              <div class="card ">
+              <div class="card">
                 <img
                   src="./assets/pic/Jin_Kazama_(T7).png  "
                   alt="pic_jin"
                   data-name="jin"
                 />
               </div>
-              
-              
+
               <div class="card">
                 <img
                   src="./assets/pic/shimizu-hinako.webp"
@@ -170,7 +173,7 @@
                   data-name="hinako"
                 />
               </div>
-              <div class="card ">
+              <div class="card">
                 <img
                   src="./assets/pic/Arthur_Morgan.png"
                   alt="pic_arthur"
@@ -209,9 +212,24 @@
             </div>
           </div>
         </section>
+        <section class="products-slider">
+          <div class="products-slider__title">
+            <h2>بازی های پرفروش</h2>
+            <div class="icon-title"></div>
+          </div>
+          <div class="products-slider__view">
+            <div class="products-slider__view-card" id="products-slider__card">
+              
+              
+              
+            </div>
+            
+          </div>
+        </section>
       </main>
     </div>
 
     <script src="./app.js"></script>
+    <script src="./productapi.js"></script>
   </body>
 </html>
