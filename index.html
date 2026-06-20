@@ -125,17 +125,15 @@
         </div>
       </header>
       <main>
-         
         <section>
-          
           <div class="introduce_characters__title">
-           
             <h1>شخصیت های محبوب بازی</h1>
-           
           </div>
 
           <div class="introduce_characters__slider" id="introduce_characters">
-             <div class="introduce_characters__bg"><img src="./assets/pic/bg.webp" alt=""></div>
+            <div class="introduce_characters__bg">
+              <img src="./assets/pic/bg.webp" alt="" />
+            </div>
             <div class="introduce_characters__slider-arrow">
               <button class="next">
                 <img
@@ -213,23 +211,22 @@
           </div>
         </section>
         <section class="products-slider">
-          <div class="products-slider__title">
-            <h2>بازی های پرفروش</h2>
-            <div class="icon-title"></div>
-          </div>
-          <div class="products-slider__view">
-            <div class="products-slider__view-card" id="products-slider__card">
-              
-              
-              
+          <div class="products-slider__title  ">
+            <div class="famous-game">
+              <h2>بازی های پرفروش</h2>
+              <div class="icon-title"></div>
             </div>
-            
+            <button class="btn">بیشتر</button>
           </div>
+            <div
+              class="products-slider__view-card flex"
+              id="products-slider__card"
+            ></div>
         </section>
       </main>
     </div>
 
     <script src="./app.js"></script>
-    <script src="./productapi.js"></script>
+    <script src="./productapi.js" type="module"></script>
   </body>
 </html>

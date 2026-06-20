@@ -1,0 +1,87 @@
+{
+    "games":[
+        {
+        "id":1,
+        "title":"Ghost of Yotei",
+        "price":1200000,
+        "image":"./assets/pic/img_games/1.webp",
+        "discount":1000000
+
+    },
+    {
+        "id":2,
+        "title":"Monster Hunter Wilds",
+        "price":1400000,
+        "image":"./assets/pic/img_games/2.webp",
+        "discount":1000000
+
+    },
+    {
+        "id":3,
+        "title":"Fate Trigger: The Novita",
+        "price":1000000,
+        "image":"./assets/pic/img_games/3.webp",
+        "discount":1000000
+
+    },
+    {
+        "id":4,
+        "title":"Arche Age: Chronicles",
+        "price":1800000,
+        "image":"./assets/pic/img_games/4.webp",
+        "discount":1000000
+
+    },
+    {
+        "id":5,
+        "title":"God of War ",
+        "price":1100000,
+        "image":"./assets/pic/img_games/5.webp",
+        "discount":1000000
+
+    },
+    {
+        "id":6,
+        "title":"Split Fiction",
+        "price":1400000,
+        "image":"./assets/pic/img_games/6.jpeg",
+        "discount":1000000
+
+    },
+    {
+        "id":7,
+        "title":"Devil May Cry 5",
+        "price":1400000,
+        "image":"./assets/pic/img_games/7.jpeg",
+        "discount":1000000
+
+    },
+    {
+        "id":8,
+        "title":"Assassin’s Creed Shadows",
+        "price":1400000,
+        "image":"./assets/pic/img_games/8.jpeg",
+        "discount":1000000
+
+    },
+    {
+        "id":9,
+        "title":"Ori and the Blind Forest",
+        "price":1000000,
+        "image":"./assets/pic/img_games/9.jpg",
+        "discount":500000
+
+    },
+    {
+        "id":10,
+        "title":"Resident Evil ",
+        "price":2000000,
+        "image":"./assets/pic/img_games/10.jpg",
+        "discount":500000
+
+    }
+]
+
+
+}
+

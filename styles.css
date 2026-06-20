@@ -498,7 +498,7 @@ h1::before,h1::after{
  position: absolute;
   margin-top: 15rem;
 
- 
+  z-index: 20;
 }
 .introduce_characters__slider-arrow img{
   width: 1rem;
@@ -507,9 +507,10 @@ h1::before,h1::after{
 .introduce_characters__slider-arrow .prev{
   position: absolute;
  right: 52rem;
+
 }
 .introduce_characters__slider-arrow button{
-  z-index: 20;
+ 
   padding: 10px 10px;
   border: none;
   border-radius: var(--border-1);
@@ -549,8 +550,7 @@ h1::before,h1::after{
 }
 .introduce_characters__bg img{
   max-width: 100%;
-  
-margin-top: -9rem;
+ margin-top: -9rem;
 }
 
 .introduce_characters__slider .cards{
@@ -600,29 +600,133 @@ border-radius: var(--border-2);
 
 .products-slider__title{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.famous-game{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+.famous-game h2{
+  font-family: var(--font-titr);
+  color: var(--color-blue-2);
+  font-size: 1.2rem;
+}
+.carts-images{
+  max-width: 350px;
+  max-height: 120px;
+  object-fit: cover;
+}
+.products-slider__view-card{
+  
+   overflow: hidden;
+ width: 100%;
+position: relative;
+}
+
+.divcart{
+  gap: 20px;
+   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  overflow-x: auto;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.price-cart span{
+font-family: var(--font-word);
+font-size: 14px;
+}
+.title-gamelist{
+ 
+  font-size: .9rem;
+}
+
+.price-discount{
+  color: rgb(26, 141, 26);
+}
+.price-carts{
+  color: red;
+  text-decoration: line-through;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.btn {
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  color: black;
+  background-color: white;
+  font-family: var(--font-titr);
+
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
 
 /* From Uiverse.io by vikramsinghnegi */ 
 /* HTML: <div class="loader"></div> */
 .icon-title {
   width: fit-content;
-  font-size: 17px;
+  font-size: 16px;
   font-family: monospace;
   line-height: 1.4;
   font-weight: bold;
+  top:10px;
   padding: 30px 2px 50px;
-  background: linear-gradient(#000 0 0) 0 0/100% 100% content-box padding-box
+  background: linear-gradient(rgb(80, 76, 76) 0 0) 0 0/100% 100% content-box padding-box
     no-repeat;
   position: relative;
   overflow: hidden;
-  animation: l10-0 2.5s infinite cubic-bezier(1, 175, 0.5, 175);
+  animation: l10-0 2.4s infinite cubic-bezier(1, 175, 0.5, 175);
 }
 .icon-title::before {
   content: "خرید";
   display: inline-block;
-  animation: l10-2 2.5s infinite;
+  animation: l10-2 2.4s infinite;
 }
 .icon-title::after {
   content: "";
