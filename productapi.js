@@ -13,13 +13,12 @@ async function getData() {
 getData();
 
 function renderCart(games) {
-  const divchild = document.createElement("div");
-  divchild.className = "divcart";
+  
   games.forEach((item) => {
-     
-     
-      
-    divchild.innerHTML += `
+    const divchild = document.createElement("div");
+  divchild.className = "divcart";
+
+    divchild.innerHTML = `
         <div class="img-carts">
           <img src="${item.image}" alt="${item.title}" class="carts-images">
         </div>  
@@ -28,10 +27,25 @@ function renderCart(games) {
           <span class="price-carts">${item.price.toLocaleString()}</span>
           <span class="price-discount">${item.discount.toLocaleString()}</span>
         </div>
+        <div class="products-slider__shop-icon">
+          <img src="${item.imgicon}">
+          </div>
         `;
+         divcards.appendChild(divchild);
   });
-  divcards.appendChild(divchild);
+ 
 }
 
 const divcards = document.querySelector("#products-slider__card");
-const sectionCart = document.querySelector("products-slider__view");
+
+
+const arrowright=document.querySelector("#right-arrowproduct")
+const arrowrleft =document.querySelector("#left-arrowproduct")
+const maindiv=document.querySelector("#products-slider__card")
+arrowright.addEventListener("click",()=>{
+  
+maindiv.scrollLeft += 125
+})
+arrowrleft.addEventListener("click",()=>{
+  maindiv.scrollLeft -= 125
+  })

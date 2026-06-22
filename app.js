@@ -169,9 +169,7 @@ function prevSlide() {
 }
 prevSlide();
 
-document.addEventListener("scroll", () => {
- 
-});
+
 
 
 const slider =document.querySelector("#introduce_characters")
